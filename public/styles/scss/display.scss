@@ -1,0 +1,204 @@
+@import "colors", "fonts", "mixins", "size", "text";
+
+body {
+	background-color: $gray;
+	margin: $size * 2;
+	width: calc(100% - #{$size * 4});
+	height: calc(100% - #{$size * 4});
+	overflow: hidden;
+}
+
+#logo {
+	width: $size * 7;
+	height: $size * 5;
+	color: $black;
+	position: absolute;
+}
+
+#join {
+	display: flex;
+}
+
+.left,
+.right {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+
+.left {
+	margin-top: $size * 7;
+	position: relative;
+}
+
+// Join Screen - Left:
+
+#joinCard {
+	@include card($color: $purple);
+	width: $size * 15;
+	height: $size * 12;
+	padding: $size * 2;
+
+	p,
+	a {
+		color: $white;
+	}
+
+	p {
+		margin-top: $size;
+		width: $size * 10;
+	}
+}
+
+.roomCode {
+	@include card($color: $white, $text-color: $black);
+	height: $size * 3;
+	width: $size * 8;
+	position: absolute;
+	bottom: $size * 4;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.phone {
+	position: absolute;
+	width: $size * 11;
+	right: 0;
+
+	.frame {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.qr {
+		position: absolute;
+		top: $size * 3;
+		z-index: 99;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: 35px;
+	}
+}
+
+// Join Screen - Right:
+
+#playersCard {
+	@include card($color: $white, $text-color: $black);
+	margin-left: $size * 2;
+	padding: $size * 2;
+	width: $size * 16;
+	height: $size * 13;
+
+	position: relative;
+}
+
+.players {
+	max-height: $size * 7;
+	overflow-y: auto;
+}
+
+.player {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: $size;
+
+	width: fit-content;
+	padding-left: $size / 3;
+	padding-right: $size / 3;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: $size / 2;
+	margin-right: $size / 2;
+}
+
+.player.green {
+	@include card($color: $green, $radius: 7px);
+}
+.player.purple {
+	@include card($color: $purple, $radius: 7px);
+}
+.player.orange {
+	@include card($color: $orange, $radius: 7px);
+}
+.player.red {
+	@include card($color: $red, $radius: 7px);
+}
+.player.blue {
+	@include card($color: $blue, $radius: 7px);
+}
+
+#startGame {
+	position: absolute;
+	bottom: $size * 2;
+	right: $size * 2;
+	width: $size * 7;
+	height: $size * 2;
+}
+
+.button {
+	@include card($radius: 17px);
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.nowPlaying {
+	@include card($color: $white, $text-color: $black);
+	height: $size * 4;
+	overflow: hidden;
+	position: relative;
+
+	.albumArt {
+		width: $size * 4;
+		border-radius: 35px;
+		display: inline-block;
+	}
+
+	.musicLogo {
+		position: absolute;
+		right: $size / 2;
+		top: $size / 2;
+		width: $size;
+	}
+
+	.songInfo {
+		display: inline-block;
+		vertical-align: top;
+        padding: $size;
+	}
+
+	.songTitle {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: $size;
+        margin: 0;
+	}
+
+	.songArtist {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: $size;
+        margin: 0;
+	}
+}
+
+#join .nowPlaying {
+	margin-left: $size * 2;
+	margin-top: $size * 2;
+}

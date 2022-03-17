@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin: 0;
+}
+
+p,
+a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+body {
+  background-color: #f0f0f6;
+  margin: 80px;
+  width: calc(100% - 160px);
+  height: calc(100% - 160px);
+  overflow: hidden;
+}
+
+#logo {
+  width: 280px;
+  height: 200px;
+  color: #2b2c30;
+  position: absolute;
+}
+
+#join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.left {
+  margin-top: 280px;
+  position: relative;
+}
+
+#joinCard {
+  border-radius: 35px;
+  background-color: #9b51e0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 600px;
+  height: 480px;
+  padding: 80px;
+}
+
+#joinCard p,
+#joinCard a {
+  color: #ffffff;
+}
+
+#joinCard p {
+  margin-top: 40px;
+  width: 400px;
+}
+
+.roomCode {
+  border-radius: 35px;
+  background-color: #ffffff;
+  color: #2b2c30;
+  font-family: 'Montserrat', sans-serif;
+  height: 120px;
+  width: 320px;
+  position: absolute;
+  bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone {
+  position: absolute;
+  width: 440px;
+  right: 0;
+}
+
+.phone .frame {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.phone .qr {
+  position: absolute;
+  top: 120px;
+  z-index: 99;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 35px;
+}
+
+#playersCard {
+  border-radius: 35px;
+  background-color: #ffffff;
+  color: #2b2c30;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 80px;
+  padding: 80px;
+  width: 640px;
+  height: 520px;
+  position: relative;
+}
+
+.players {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.player {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 13.33333px;
+  padding-right: 13.33333px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.player.green {
+  border-radius: 7px;
+  background-color: #2ddb73;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.player.purple {
+  border-radius: 7px;
+  background-color: #9b51e0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.player.orange {
+  border-radius: 7px;
+  background-color: #f2994a;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.player.red {
+  border-radius: 7px;
+  background-color: #eb5757;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.player.blue {
+  border-radius: 7px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#startGame {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  width: 280px;
+  height: 80px;
+}
+
+.button {
+  border-radius: 17px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.nowPlaying {
+  border-radius: 35px;
+  background-color: #ffffff;
+  color: #2b2c30;
+  font-family: 'Montserrat', sans-serif;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.nowPlaying .albumArt {
+  width: 160px;
+  border-radius: 35px;
+  display: inline-block;
+}
+
+.nowPlaying .musicLogo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+}
+
+.nowPlaying .songInfo {
+  display: inline-block;
+  vertical-align: top;
+  padding: 40px;
+}
+
+.nowPlaying .songTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.nowPlaying .songArtist {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0;
+}
+
+#join .nowPlaying {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+/*# sourceMappingURL=display.css.map */
