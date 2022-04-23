@@ -17,12 +17,35 @@ a {
   line-height: 29px;
 }
 
+html, body {
+  background-color: #f0f0f6;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
 body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen {
   background-color: #f0f0f6;
   margin: 80px;
   width: calc(100% - 160px);
   height: calc(100% - 160px);
-  overflow: hidden;
 }
 
 #logo {
@@ -220,6 +243,7 @@ body {
   height: 160px;
   overflow: hidden;
   position: relative;
+  width: 800px;
 }
 
 .nowPlaying .albumArt {
